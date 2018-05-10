@@ -32,6 +32,7 @@ static bool load (const char *cmdline, void (**eip) (void), void **esp);
 tid_t
 process_execute (const char *file_name) 
 {
+  //printf("  PROCESS EXECUTE\n");
   char *fn_copy;
   tid_t tid;
 
@@ -48,10 +49,9 @@ process_execute (const char *file_name)
   strlcpy(fn_copy_, file_name, strlen(file_name) + 1);
   fn_copy_ = strtok_r(fn_copy_, " ", &t);
 
-  //printf("PROCESS EXEC(%s) : child name = %s, args = %s\n", thread_current()->name, fn_copy_, fn_copy);
-
   /* Create a new thread to execute FILE_NAME. */
   tid = thread_create (fn_copy_, PRI_DEFAULT, start_process, fn_copy);
+
   free(fn_copy_);
 
   if (tid == TID_ERROR)
@@ -70,8 +70,6 @@ process_execute (const char *file_name)
   ct->t = new;
   ct->status = new->status;
   ct->exit_status = NULL;
-
-  ////printf("RUNNING THREAD = %d, CREATED THREAD = %d\n", cur->tid, new->tid);
 
   new->parent_thread = cur;
 
@@ -95,6 +93,7 @@ process_execute (const char *file_name)
 static void
 start_process (void *file_name_)
 {
+  //printf("  START PROCESS\n");
   /* PARSING ARGUMENTS */
   /* &file_name -> "cmd\0" + "arg1\0" + "arg2\n" + ... */
   void *temp_file_name = malloc(strlen(file_name_) + 1);
@@ -203,7 +202,7 @@ start_process (void *file_name_)
      we just point the stack pointer (%esp) to our stack frame
      and jump to it. */
 
-  //////printf("PROCESS START(%s) : successed to start\n", thread_current()->name);
+  ////////printf("PROCESS START(%s) : successed to start\n", thread_current()->name);
   sema_up(&thread_current()->waiting_sema);
 
   asm volatile ("movl %0, %%esp; jmp intr_exit" : : "g" (&if_) : "memory");
@@ -271,6 +270,7 @@ process_wait (tid_t child_tid UNUSED)
 void
 process_exit (void)
 {
+  //printf("(%s %d)    PROCESS EXIT\n", thread_current()->name, thread_current()->tid);
   struct thread *cur = thread_current ();
   uint32_t *pd;
 
@@ -318,7 +318,7 @@ process_activate (void)
 typedef uint32_t Elf32_Word, Elf32_Addr, Elf32_Off;
 typedef uint16_t Elf32_Half;
 
-/* For use with ELF types in //////printf(). */
+/* For use with ELF types in //printf(). */
 #define PE32Wx PRIx32   /* //Print Elf32_Word in hexadecimal. */
 #define PE32Ax PRIx32   /* //Print Elf32_Addr in hexadecimal. */
 #define PE32Ox PRIx32   /* //Print Elf32_Off in hexadecimal. */
@@ -402,10 +402,10 @@ load (const char *file_name, void (**eip) (void), void **esp)
   process_activate ();
 
   /* Open executable file. */
-  //printf("LOAD : file open, %s, %p %d\n", file_name, file_name, strlen(file_name));
+  ////printf("LOAD : file open, %s, %p %d\n", file_name, file_name, strlen(file_name));
   file = filesys_open (file_name);
 
-  //printf("LOAD : OPENED?(%p)\n", file);
+  ////printf("LOAD : OPENED?(%p)\n", file);
 
   if (file != NULL)
     file_deny_write(file);
@@ -499,6 +499,7 @@ load (const char *file_name, void (**eip) (void), void **esp)
   file_allow_write(file);
 
  done:
+  t->is_running = true;
   /* We arrive here whether the load is successful or not. */
   file_close (file);
   return success;
@@ -617,6 +618,7 @@ load_segment (struct file *file, off_t ofs, uint8_t *upage,
 static bool
 setup_stack (void **esp) 
 {
+  //printf("(%s)  SETUP STACK\n", thread_current()->name);
   uint8_t *kpage;
   bool success = false;
 

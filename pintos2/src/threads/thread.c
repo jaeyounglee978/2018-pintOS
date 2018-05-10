@@ -292,11 +292,14 @@ thread_exit (void)
 {
   ASSERT (!intr_context ());
 
+  struct thread *ct = thread_current();
+  frame_delete_by_pid(ct->tid);
+  //swap_entry_delete_by_tid(ct->tid);
+
+
 #ifdef USERPROG
   process_exit ();
 #endif
-
-  struct thread *ct = thread_current();
   
   if(ct->parent_thread != NULL)
   {
@@ -320,6 +323,7 @@ thread_exit (void)
     free(child);
   }
 
+
   if (ct->file_lock_hold)
     filesys_lock_release();
 
@@ -332,6 +336,7 @@ thread_exit (void)
   /* Remove thread from all threads list, set our status to dying,
      and schedule another process.  That process will destroy us
      when it calls thread_schedule_tail(). */
+
   intr_disable ();
   list_remove (&ct->allelem);
   sema_up(&ct->waiting_sema);
@@ -510,6 +515,7 @@ init_thread (struct thread *t, const char *name, int priority)
   t->waiting_child = 0;    
   t->sys_lock_hold = 0;
   t->file_lock_hold = 0;
+  t->is_running = false;
   sema_init(&t->waiting_sema, 0);
   list_push_back (&all_list, &t->allelem);
 }

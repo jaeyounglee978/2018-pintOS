@@ -1,443 +1,4 @@
 make
-backtrace kernel.o Call stack: 0xc0028530 0xc002b7cc 0xc002b874 0xc0021a8d 0xc0021bbf 0xc00285b5 0xc002a510 0xc0020285 0xc0020930.
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-backtrace kernel.o Call stack: 0xc0028530 0xc002b7dc 0xc002b884 0xc0021a8d 0xc0021bbf 0xc00285b5 0xc002a520 0xc0020285 0xc0020930.
-make
-backtrace kernel.o Call stack: 0xc0028530 0xc002b7dc 0xc002b884 0xc0021a8d 0xc0021bbf 0xc00285b5 0xc002a520 0xc0020285 0xc0020930.
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-backtrace kernel.o Call stack: 0xc0028520 0xc002344c 0xc00234eb 0xc002a4fd 0xc0020285 0xc0020930.
-make
-backtrace kernel.o Call stack: 0xc0028520 0xc002344c 0xc00234eb 0xc002a4fd 0xc0020285 0xc0020930.
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-backtrace kernel.o Call stack: 0xc0028520 0xc00230ca 0xc002310c 0xc002a4fd 0xc0020285 0xc0020930.
-make
-backtrace kernel.o Call stack: 0xc0028520 0xc00230ca 0xc002310c 0xc002a4fd 0xc0020285 0xc0020930.
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make check
-make
-make check
-make
-make check
-make
-make check
-make
-make check
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you!'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you!'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you!'
-make check
-make
-make check
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for 
-you'
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-vim ../process.c
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-multiple -a args-multiple -- -q  -f run 'args-multiple some arguments for you'pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make check
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v
-make
-make check
-make
-make check
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-ake
-make
-ake
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-~/
-~
-.~
-`
-
-~
-/
-!
-exit
-cd pintos2/src/userprog/build/
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-backtrace kernel.o Call stack: 0xc0028520 0xc002b7ec 0xc002b894 0xc0021a7d 0xc0021baf 0xc0027a3c 0xc002a61d 0xc00212b4.
-make
-backtrace kernel.o Call stack: 0xc0028520 0xc002b7ec 0xc002b894 0xc0021a7d 0xc0021baf 0xc0027a3c 0xc002a61d 0xc00212b4.
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-backtrace kernel.o Call stack: 0xc0028520 0xc002b80c 0xc002b8b4 0xc0021a7d 0xc0021baf 0xc0027a3c 0xc0027bd8 0xc002a634 0xc00212b4.
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make check
-make
-make check
-make
-make check
-make
-make check
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make check
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-none -a args-none -- -q  -f run args-none
-make check
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make check
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make check
-ls
-vim results 
-make check
-make
-make check
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/args-many -a args-many -- -q  -f run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
-make
-make check
-cd pintos2/src/userprog/build/
-make check
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-arg -a sc-bad-arg -- -q  -f run sc-bad-argpintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-arg -a sc-bad-arg -- -q  -f run sc-bad-arg
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-arg -a sc-bad-arg -- -q  -f run sc-bad-arg
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-sp -a sc-bad-sp -- -q  -f run sc-bad-s
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-sp -a sc-bad-sp -- -q  -f run sc-bad-sp
-backtrace kernel.o Call stack: 0xc0028520 0xc002b7cc 0xc002b874 0xc0021a7d 0xc0021baf 0xc002bcd1 0xc0021a7d 0xc0021baf 0x80480ad 0x80480f1 0x804870e 0.
-make
-backtrace kernel.o Call stack: 0xc0028520 0xc002b7cc 0xc002b874 0xc0021a7d 0xc0021baf 0xc002bcd1 0xc0021a7d 0xc0021baf 0x80480ad 0x80480f1 0x804870e 0.
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-sp -a sc-bad-sp -- -q  -f run sc-bad-sp
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-sp -a sc-bad-sp -- -q  -f run sc-bad-sp
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-sp -a sc-bad-sp -- -q  -f run sc-bad-sp
-backtrace kernel.o Call stack: 0xc0028520 0xc002b7cc 0xc002b874 0xc0021a7d 0xc0021baf 0xc002bce7 0xc0021a7d 0xc0021baf 0x80480ad 0x80480f1 0x804870e 0.
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-sp -a sc-bad-sp -- -q  -f run sc-bad-sp
-backtrace kernel.o Call stack: 0xc0028520 0xc002b7cc 0xc002b874 0xc0021a7d 0xc0021baf 0xc002bce7 0xc0021a7d 0xc0021baf 0x80480ad 0x80480f1 0x804870e 0.
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-sp -a sc-bad-sp -- -q  -f run sc-bad-sp
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-sp -a sc-bad-sp -- -q  -f run sc-bad-sp
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-sp -a sc-bad-sp -- -q  -f run sc-bad-sp
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-sp -a sc-bad-sp -- -q  -f run sc-bad-sp
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-sp -a sc-bad-sp -- -q  -f run sc-bad-sp
-make check
-cd pintos2/src/userprog/build/
-make
-ake
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-sp -a sc-bad-sp -- -q  -f run sc-bad-sp
-make
-backtrace kernel.o Call stack: 0xc0028520 0xc002b7cc 0xc002b874 0xc0021a7d 0xc0021baf 0xc002bcd1 0xc0021a7d 0xc0021baf 0x80480ad 0x80480f1 0x804870e 0
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-sp -a sc-bad-sp -- -q  -f run sc-bad-sp
-make check
-make
-make check
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-arg -a sc-bad-arg -- -q  -f run sc-bad-arg
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-arg -a sc-bad-arg -- -q  -f run sc-bad-arg
-make check
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-arg -a sc-bad-arg -- -q  -f run sc-bad-arg
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-arg -a sc-bad-arg -- -q  -f run sc-bad-a
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/sc-bad-arg -a sc-bad-arg -- -q  -f run sc-bad-arg
-cp /home/team24a/pintos3/src/userprog/ ../ -r
-make
-make check
-cp /home/team24a/pintos3/src/userprog/ /home/team24b/pintos2/src/userprog/ -r
-make
-make check
-cp /home/team24a/pintos3/src/userprog/ /home/team24b/pintos2/src/userprog/
-make
-cp /home/team24a/pintos3/src/userprog /home/team24b/pintos2/src/userprog
-cp /home/team24a/pintos3/src/userprog /home/team24b/pintos2/src/userprog -r
-make
-make check
-cp /home/team24a/pintos3/src/userprog/* /home/team24b/pintos2/src/userprog/* -r
-cp /home/team24a/pintos3/src/userprog/* /home/team24b/pintos2/src/userprog/ -r
-make
-make check
-make
-make check
-make
-make check
-make
-make check
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-normal -a create-normal -- -q  -f run create-normal
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-normal -a create-normal -- -q  -f run create-normal
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-normal -a create-normal -- -q  -f run create-normal
-mae
-make
-mae
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-normal -a create-normal -- -q  -f run create-normal
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-normal -a create-normal -- -q  -f run create-normal
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-normal -a create-normal -- -q  -f run create-normal
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-normal -a create-normal -- -q  -f run create-normal
-make check
-make
-mpintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-empty -a create-empty -- -q  -f run create-empty
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-empty -a create-empty -- -q  -f run create-empty
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-empty -a create-empty -- -q  -f run create-empty
-ake
-make
-ake
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-empty -a create-empty -- -q  -f run create-empty
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-empty -a create-empty -- -q  -f run create-empty
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-empty -a create-empty -- -q  -f run create-empty
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-empty -a create-empty -- -q  -f run create-empty
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-empty -a create-empty -- -q  -f run create-empty
-make check
-`pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bad-ptr -a create-bad-ptr -- -q  -f run create-bad-ptr
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bad-ptr -a create-bad-ptr -- -q  -f run create-bad-ptr
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bad-ptr -a create-bad-ptr -- -q  -f run create-bad-ptr
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bad-ptr -a create-bad-ptr -- -q  -f run create-bad-ptr
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bad-ptr -a create-bad-ptr -- -q  -f run create-bad-ptr
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bad-ptr -a create-bad-ptr -- -q  -f run create-bad-ptr
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bad-ptr -a create-bad-ptr -- -q  -f run create-bad-ptr
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bad-ptr -a create-bad-ptr -- -q  -f run create-bad-ptr
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bad-ptr -a create-bad-ptr -- -q  -f run create-bad-ptr
-make check
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-normal -a create-normal -- -q  -f run create-normal
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-normal -a create-normal -- -q  -f run create-normal
-make check
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bad-ptr -a create-bad-ptr -- -q  -f run create-bad-ptr
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bad-ptr -a create-bad-ptr -- -q  -f run create-bad-ptr
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bad-ptr -a create-bad-ptr -- -q  -f run create-bad-ptr
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bad-ptr -a create-bad-ptr -- -q  -f run create-bad-ptr
-backtrace kernel.o Call stack: 0xc0028520 0xc002b7cc 0xc002b874 0xc0021a7d 0xc0021baf 0xc002b9ce 0xc002bf21 0xc0021a7d 0xc0021baf 0x804a108 0x80480ba 0x8048107 0x804872e 0.
-make
-backtrace kernel.o Call stack: 0xc0028520 0xc002b7cc 0xc002b874 0xc0021a7d 0xc0021baf 0xc002b9ce 0xc002bf21 0xc0021a7d 0xc0021baf 0x804a108 0x80480ba 0x8048107 0x804872e 0.
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bad-ptr -a create-bad-ptr -- -q  -f run create-bad-ptr
-make check
-make
-make chek
-make check
-make
-make check
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-ake
-make
-ake
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make check
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-exists -a create-exists
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-exists -a create-exists -- -q  -f run create-exists
-make check
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-exists -a create-exists -- -q  -f run create-exist
-make check
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make
-ake
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-bound -a create-bound -- -q  -f run create-bound
-make check
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-exists -a create-exists -- -q  -f run create-exists
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-exists -a create-exists -- -q  -f run create-exists
-backtrace kernel.o Call stack: 0xc0028520 0xc002b7cc 0xc002b874 0xc0021a7d 0xc0021baf 0xc00285a5 0xc0029189 0xc00236d9 0xc002b9c2 0xc002be9c 0xc0021a7d 0xc0021baf 0x804a1c8 0x80480f6 0x80481d0 0x80487ee 0.
-cd pintos2/src/userprog/build/
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-exists -a create-exists -- -q  -f run create-exists
-make
-pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-exists -a create-exists -- -q  -f run create-exists
-make
 ake
 make
 pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/userprog/create-exists -a create-exists -- -q  -f run create-exists
@@ -1998,3 +1559,442 @@ pintos -v -k -T 360 --qemu  --filesys-size=2 -p tests/userprog/no-vm/multi-oom -
 make
 pintos -v -k -T 360 --qemu  --filesys-size=2 -p tests/userprog/no-vm/multi-oom -a multi-oom -- -q  -f run multi-oom
 make check
+cd pintos2/src/vm/build/
+backtrace kernel.o Call stack: 0xc0028750 0xc00232c0 0xc0023302 0xc002b2ea 0xc002a6a1 0xc0021041 0xc002c18c 0xc002bee2 0xc0021bad 0xc0021cdf 0x8048918
+make
+backtrace kernel.o Call stack: 0xc0028750 0xc00232c0 0xc0023302 0xc002b2ea 0xc002a6a1 0xc0021041 0xc002c18c 0xc002bee2 0xc0021bad 0xc0021cdf 0x8048918
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linearㅠ
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+backtrace kernel.o 
+backtrace kernel.o Call stack: 0xc0028750 0xc002b776 0xc002bc3b 0xc002bf02 0xc0021bad 0xc0021cdf 0x8048918.
+cd ../../..
+ls
+cd ..
+git reset hard HEAD
+git reset --hard HEAD
+ls pintos2/src/vm/
+vim pintos2/src/vm/frame.c
+git add -a
+git add -A
+git commit
+git reset --hard HEAD~1
+git status
+ls pintos2/src/vm/
+cd pintos2/src/vm/
+make check
+make
+ls
+rm frame.*
+rm pagetable.*
+rm swap.*
+rm suppagetable.*
+ls
+make
+make check
+make
+git reset --hard HEAD~1
+cd .. .. .. .. ..
+cd ../../
+ls
+git reset --hard HEAD~1
+git reset --hard HEAD
+ls
+cd pintos2/src/vm/
+ls
+make
+ls
+cd build/
+make
+mkae
+make
+cd ..
+rm -rf build/
+ls
+make
+ls
+rm -rf build/
+make
+make check
+make
+ls ..
+cd ../../..
+ls
+git reset --hard HEAD
+ls
+ls pintos2/src/vm/
+cd pintos2/src/vm/
+ls
+make
+ls
+ls build/
+ls
+vim pagetable.c
+make
+vim pagetable.c
+make check
+make
+ake
+make
+make check
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+ls
+cd build/
+ls
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+backtrace kernel.o Call stack: 0xc0028650 0xc0029294 0xc00292af 0xc002e638 0xc002e44f 0xc00232c5 0xc0023321 0xc002ac75 0xc00213be.
+make
+backtrace kernel.o Call stack: 0xc0028650 0xc0029294 0xc00292af 0xc002e638 0xc002e44f 0xc00232c5 0xc0023321 0xc002ac75 0xc00213be.
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+ake
+make
+ake
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+cd pintos2/src/vm/build/
+ls
+make
+cd pintos2/src/vm/build/
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+backtrace kernel.o 0xc0028650 0xc0029294 0xc00292af 0xc002e678 0xc002e46f 0xc00232f1 0xc0023320 0xc002ac75 0xc00213be.
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+backtrace kernel.o 0xc0028660 0xc002ebad 0xc002e5dd 0xc0023302 0xc0023331 0xc002ac85 0xc00213be.
+make
+backtrace kernel.o 0xc0028660 0xc002ebad 0xc002e5dd 0xc0023302 0xc0023331 0xc002ac85 0xc00213be.
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear | grep 0xc02b0000
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear | grep 0xc02b0000
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear | grep 0xc010f00c
+makje
+make
+makje
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear | grep 0x8048000
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear | grep 0x8048000
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+backtrace kernel.o 0xc0028670 0xc002e643 0xc002b79e 0xc002bcd1 0xc0021b8d 0xc0021cbf 0x8048918.
+make
+backtrace kernel.o 0xc0028670 0xc002e643 0xc002b79e 0xc002bcd1 0xc0021b8d 0xc0021cbf 0x8048918.
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+backtrace kernel.h 0xc0028670 0xc002e643 0xc002b79e 0xc002bcd1 0xc0021b8d 0xc0021cbf 0x8048918.
+backtrace kernel.o 0xc0028670 0xc002e643 0xc002b79e 0xc002bcd1 0xc0021b8d 0xc0021cbf 0x8048918.
+make
+backtrace kernel.o 0xc0028670 0xc002e643 0xc002b79e 0xc002bcd1 0xc0021b8d 0xc0021cbf 0x8048918.
+backtrace kernel.h 0xc0028670 0xc002e643 0xc002b79e 0xc002bcd1 0xc0021b8d 0xc0021cbf 0x8048918.
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+backtrace kernel.o 0xc0028670 0xc002bc92 0xc0021b8d 0xc0021cbf 0x8048918.
+makemake
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+backtrace kernel.o  0xc0028670 0xc002bc45 0xc0021b8d 0xc0021cbf 0x8048918.
+make
+backtrace kernel.o  0xc0028670 0xc002bc45 0xc0021b8d 0xc0021cbf 0x8048918.
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+mak
+make
+mak
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+backtrace kernel.o 0xc0028670 0xc002bc45 0xc0021b8d 0xc0021cbf 0x8048918.
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+mke
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+backtrace kernel.o Call stack: 0xc0028670 0xc0020bf9 0xc002297b 0xc002a397 0xc002a4b3 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0xc002bbbc 0xc0021b8d 0xc0021cbf 0x8048918.
+The `backtrace' program can make call stacks useful.
+
+clear
+
+clear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+ls
+make
+make check
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+cd pintos2/src/vm/build/
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+backtrace kernel.o Call stack: 0xc0028670 0xc002e7e9 0xc0023306 0xc0023335 0xc002bc9a 0xc0021b8d 0xc0021cbf 0x80482a8 0x8048aae 0x8048ae0 0.
+make
+backtrace kernel.o Call stack: 0xc0028670 0xc002e7e9 0xc0023306 0xc0023335 0xc002bc9a 0xc0021b8d 0xc0021cbf 0x80482a8 0x8048aae 0x8048ae0 0.
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+backtrace kernel.o Call stack: 0xc0028680 0xc002b144 0xc002b35b 0xc002bb8b 0xc0021b9d 0xc0021ccf 0xc002870d 0xc00236e5 0xc002ea40 0xc00210c2 0xc002bfdc 0xc002c4d1 0xc0021b9d 0xc0021ccf 0x804a457
+make
+backtrace kernel.o Call stack: 0xc0028680 0xc002b144 0xc002b35b 0xc002bb8b 0xc0021b9d 0xc0021ccf 0xc002870d 0xc00236e5 0xc002ea40 0xc00210c2 0xc002bfdc 0xc002c4d1 0xc0021b9d 0xc0021ccf 0x804a457
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+Call stack: 0xc0028680 0xc002b144 0xc002b35b 0xc002bb8b 0xc0021b9d 0xc0021ccf 0xc002870d 0xc00236e5 0xc002ea40 0xc002105c 0xc002bfdc 0xc002c4d1 0xc0021b9d 0xc0021ccf 0x804a457
+backtrace kernel.o Call stack: 0xc0028680 0xc002b144 0xc002b35b 0xc002bb8b 0xc0021b9d 0xc0021ccf 0xc002870d 0xc00236e5 0xc002ea40 0xc002105c 0xc002bfdc 0xc002c4d1 0xc0021b9d 0xc0021ccf 0x804a457
+make
+backtrace kernel.o Call stack: 0xc0028680 0xc002b144 0xc002b35b 0xc002bb8b 0xc0021b9d 0xc0021ccf 0xc002870d 0xc00236e5 0xc002ea40 0xc002105c 0xc002bfdc 0xc002c4d1 0xc0021b9d 0xc0021ccf 0x804a457
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+backtrace kernel.o Call stack: 0xc0028650 0xc00231db 0xc002321d 0xc002b83e 0xc002a5a1 0xc0021041 0xc002bf3c 0xc002bc0d 0xc0021b8d 0xc0021cbf 0x8048fff
+make check
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+backtrace kernel.o Call stack: 0xc0028660 0xc00231eb 0xc002322d 0xc002b84e 0xc002a5b1 0xc0021041 0xc002bf4c 0xc002bc1d 0xc0021b9d 0xc0021ccf 0x8048fff
+make
+backtrace kernel.o Call stack: 0xc0028660 0xc00231eb 0xc002322d 0xc002b84e 0xc002a5b1 0xc0021041 0xc002bf4c 0xc002bc1d 0xc0021b9d 0xc0021ccf 0x8048fff
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+backtrace kernel.o Call stack: 0xc0028660 0xc002b124 0xc002b33b 0xc002bb5f 0xc0021b9d 0xc0021ccf 0xc00286ed 0xc00236c5 0xc002e9b0 0xc00210ea 0xc002bf4c 0xc002c441 0xc0021b9d 0xc0021ccf 0x804a457
+make
+backtrace kernel.o Call stack: 0xc0028660 0xc002b124 0xc002b33b 0xc002bb5f 0xc0021b9d 0xc0021ccf 0xc00286ed 0xc00236c5 0xc002e9b0 0xc00210ea 0xc002bf4c 0xc002c441 0xc0021b9d 0xc0021ccf 0x804a457
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+make
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make check
+pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/vm/page-merge-stk -a page-merge-stk -p tests/vm/child-qsort -a child-qsort --swap-size=4 -- -q  -f run page-merge-stk
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/vm/page-merge-mm -a page-merge-mm -p tests/vm/child-qsort-mm -a child-qsort-mm --swap-size=4 -- -q  -f run page-merge-mm
+make
+pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/vm/page-merge-mm -a page-merge-mm -p tests/vm/child-qsort-mm -a child-qsort-mm --swap-size=4 -- -q  -f run page-merge-mm
+make
+pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/vm/page-merge-mm -a page-merge-mm -p tests/vm/child-qsort-mm -a child-qsort-mm --swap-size=4 -- -q  -f run page-merge-mm
+backtrace kernel.o Call stack: 0xc0028650 0xc002be35 0xc002bb87 0xc0021b8d 0xc0021cbf 0x80481eb 0x804814e 0x804897e 0.
+make
+pintos -v -k -T 60 --qemu  --filesys-size=2 -p tests/vm/page-merge-mm -a page-merge-mm -p tests/vm/child-qsort-mm -a child-qsort-mm --swap-size=4 -- -q  -f run page-merge-mm
+cd pintos2/src/vm/build/
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq | grep 0x10000001
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq | grep 0x10000001
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-seq -a page-merge-seq -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-seq
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par | grep 0x1fe9c1bc
+pintos -v -k -T 300 --qemu  --filesys-size=2 -p tests/vm/page-linear -a page-linear --swap-size=4 -- -q  -f run page-linear
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+backtrace kernel.o 
+backtrace kernel.o Call stack: 0xc00286a0 0xc0022e80 0xc002ece2 0xc002e7b1 0xc0023314 0xc002336c 0xc002ad25 0xc00213c2.
+make
+backtrace kernel.o Call stack: 0xc00286a0 0xc0022e80 0xc002ece2 0xc002e7b1 0xc0023314 0xc002336c 0xc002ad25 0xc00213c2.
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+gcc -o pagetable.h pagetable.c
+cd ..
+gcc -o pagetable.h pagetable.c
+cd build/
+make
+ake
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+backtrace kernel.o Call stack: 0xc0028700 0xc00231fb 0xc002323d 0xc002b9e9 0xc002a65d 0xc0021048 0xc002c14c 0xc002bd03 0xc0021b8d 0xc0021cbf.
+make
+backtrace kernel.o Call stack: 0xc0028700 0xc00231fb 0xc002323d 0xc002b9e9 0xc002a65d 0xc0021048 0xc002c14c 0xc002bd03 0xc0021b8d 0xc0021cbf.
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+backtrace kernel.o Call stack: 0xc0028700 0xc00231fb 0xc002323d 0xc002b9e9 0xc002a65d 0xc0021048 0xc002c14c 0xc002bd03 0xc0021b8d 0xc0021cbf.
+make
+backtrace kernel.o Call stack: 0xc0028700 0xc00231fb 0xc002323d 0xc002b9e9 0xc002a65d 0xc0021048 0xc002c14c 0xc002bd03 0xc0021b8d 0xc0021cbf.
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+backtrace kernel.o Call stack: 0xc0028710 0xc0020bf9 0xc002297b 0xc002a437 0xc002a4a2 0xc0026824 0xc0026d59 0xc002a5a9 0xc0026ee3 0xc002bd37 0xc0021b8d 0xc0021cbf 0xc0028cad 0xc0020a34 0xc0021060 0xc002c1ac 0xc002bd63 0xc0021b8d 0xc0021cbf 0xc0028cad 0xc0020a34 0xc0021060 0xc002c1ac 0xc002bd63 0xc0021b8d 0xc0021cbf 0xc0028cad 0xc0020a34 0xc0021060 0xc002c1ac 0xc002bd63 0xc0021b8d 0xc0021cbf 0xc0028cad 0xc0020a34 0xc0021060 0xc002c1ac 0xc002bd63 0xc0021b8d 0xc0021cbf 0xc0028cad 0xc0020a34 0xc0021060 0xc002c1ac 0xc002bd63 0xc0021b8d 0xc0021cbf 0xc0028cad 0xc0020a34 0xc0021060 0xc002c1ac 0xc002bd63 0xc0021b8d 0xc0021cbf 0xc002e763 0xc002e844 0xc0023101 0xc0023257 0xc0023783 0xc0025013 0xc0025046 0xc00259dc 0xc0020865.
+make
+backtrace kernel.o Call stack: 0xc0028710 0xc0020bf9 0xc002297b 0xc002a437 0xc002a4a2 0xc0026824 0xc0026d59 0xc002a5a9 0xc0026ee3 0xc002bd37 0xc0021b8d 0xc0021cbf 0xc0028cad 0xc0020a34 0xc0021060 0xc002c1ac 0xc002bd63 0xc0021b8d 0xc0021cbf 0xc0028cad 0xc0020a34 0xc0021060 0xc002c1ac 0xc002bd63 0xc0021b8d 0xc0021cbf 0xc0028cad 0xc0020a34 0xc0021060 0xc002c1ac 0xc002bd63 0xc0021b8d 0xc0021cbf 0xc0028cad 0xc0020a34 0xc0021060 0xc002c1ac 0xc002bd63 0xc0021b8d 0xc0021cbf 0xc0028cad 0xc0020a34 0xc0021060 0xc002c1ac 0xc002bd63 0xc0021b8d 0xc0021cbf 0xc0028cad 0xc0020a34 0xc0021060 0xc002c1ac 0xc002bd63 0xc0021b8d 0xc0021cbf 0xc002e763 0xc002e844 0xc0023101 0xc0023257 0xc0023783 0xc0025013 0xc0025046 0xc00259dc 0xc0020865.
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+backtrace kernel.o Call stack: 0xc0028730 0xc0020bf9 0xc002297b 0xc002a457 0xc002a4c2 0xc0026844 0xc0026d79 0xc002a5c9 0xc0026f03 0xc002bd57 0xc0021b8d 0xc0021cbf 0xc0028ccd 0xc0020a34 0xc0021060 0xc002c1cc 0xc002bd83 0xc0021b8d 0xc0021cbf 0xc0028ccd 0xc0020a34 0xc0021060 0xc002c1cc 0xc002bd83 0xc0021b8d 0xc0021cbf 0xc0028ccd 0xc0020a34 0xc0021060 0xc002c1cc 0xc002bd83 0xc0021b8d 0xc0021cbf 0xc0028ccd 0xc0020a34 0xc0021060 0xc002c1cc 0xc002bd83 0xc0021b8d 0xc0021cbf 0xc0028ccd 0xc0020a34 0xc0021060 0xc002c1cc 0xc002bd83 0xc0021b8d 0xc0021cbf 0xc0028ccd 0xc0020a34 0xc0021060 0xc002c1cc 0xc002bd83 0xc0021b8d 0xc0021cbf 0xc002e78c 0xc002e86d 0xc00231c6 0xc0023269 0xc00237a3 0xc0025033 0xc0025066 0xc00259fc 0xc0020865.
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+ake
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+ƒmake
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+cd pintos2/src/vm/build/
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par | grep page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+clear
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+backtrace kernel.o 0xc0028710 0xc002bd5f 0xc0021b8d 0xc0021cbf.
+make
+backtrace kernel.o 0xc0028710 0xc002bd5f 0xc0021b8d 0xc0021cbf.
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+ake
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par
+make
+pintos -v -k -T 600 --qemu  --filesys-size=2 -p tests/vm/page-merge-par -a page-merge-par -p tests/vm/child-sort -a child-sort --swap-size=4 -- -q  -f run page-merge-par

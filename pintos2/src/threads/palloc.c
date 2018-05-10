@@ -10,6 +10,9 @@
 #include "threads/loader.h"
 #include "threads/synch.h"
 #include "threads/vaddr.h"
+#include "vm/pagetable.h"
+#include "vm/frame.h"
+#include "vm/swap.h"
 
 /* Page allocator.  Hands out memory in page-size (or
    page-multiple) chunks.  See malloc.h for an allocator that
@@ -32,6 +35,8 @@ struct pool
     struct bitmap *used_map;            /* Bitmap of free pages. */
     uint8_t *base;                      /* Base of pool. */
   };
+
+struct lock palloc_lock;
 
 /* Two pools: one for kernel data, one for user pages. */
 static struct pool kernel_pool, user_pool;
@@ -59,6 +64,8 @@ palloc_init (size_t user_page_limit)
   init_pool (&kernel_pool, free_start, kernel_pages, "kernel pool");
   init_pool (&user_pool, free_start + kernel_pages * PGSIZE,
              user_pages, "user pool");
+
+  lock_init(&palloc_lock);
 }
 
 /* Obtains and returns a group of PAGE_CNT contiguous free pages.
@@ -70,6 +77,7 @@ palloc_init (size_t user_page_limit)
 void *
 palloc_get_multiple (enum palloc_flags flags, size_t page_cnt)
 {
+  //printf("(%s, %d)  PALLOC GET PAGE (%s)\n", thread_current()->name, thread_current()->tid, (flags & PAL_USER) ? "USER" : "KERNEL");
   struct pool *pool = flags & PAL_USER ? &user_pool : &kernel_pool;
   void *pages;
   size_t page_idx;
@@ -87,16 +95,22 @@ palloc_get_multiple (enum palloc_flags flags, size_t page_cnt)
     pages = NULL;
 
   if (pages != NULL) 
-    {
-      if (flags & PAL_ZERO)
-        memset (pages, 0, PGSIZE * page_cnt);
-    }
+  {
+    if (flags & PAL_ZERO)
+      memset (pages, 0, PGSIZE * page_cnt);
+  }
   else 
+  {
+    if (flags & PAL_ASSERT)
     {
-      if (flags & PAL_ASSERT)
-        PANIC ("palloc_get: out of pages");
+      PANIC ("palloc_get: out of pages");
     }
-
+    else if (flags & PAL_USER)
+    {
+      pages = page_swap_to_disk();
+    }
+  }
+  //printf("(%s, %d)  PALLOC GET PAGE  %p\n", thread_current()->name, thread_current()->tid, pages);
   return pages;
 }
 
@@ -117,8 +131,10 @@ palloc_get_page (enum palloc_flags flags)
 void
 palloc_free_multiple (void *pages, size_t page_cnt) 
 {
+  //printf("(%s, %d)  PALLOC FREE PAGE %p\n", thread_current()->name, thread_current()->tid, pages);
   struct pool *pool;
   size_t page_idx;
+
 
   ASSERT (pg_ofs (pages) == 0);
   if (pages == NULL || page_cnt == 0)
@@ -131,14 +147,19 @@ palloc_free_multiple (void *pages, size_t page_cnt)
   else
     NOT_REACHED ();
 
+  ////printf("1");
   page_idx = pg_no (pages) - pg_no (pool->base);
 
+  ////printf("2");
 #ifndef NDEBUG
   memset (pages, 0xcc, PGSIZE * page_cnt);
 #endif
 
+  ////printf("3");
   ASSERT (bitmap_all (pool->used_map, page_idx, page_cnt));
   bitmap_set_multiple (pool->used_map, page_idx, page_cnt, false);
+
+  //printf("(%s, %d)  PALLOC FREE PAGE FINISH\n", thread_current()->name, thread_current()->tid);
 }
 
 /* Frees the page at PAGE. */
@@ -161,7 +182,7 @@ init_pool (struct pool *p, void *base, size_t page_cnt, const char *name)
     PANIC ("Not enough memory in %s for bitmap.", name);
   page_cnt -= bm_pages;
 
-  printf ("%zu pages available in %s.\n", page_cnt, name);
+  //printf ("%zu pages available in %s.\n", page_cnt, name);
 
   /* Initialize the pool. */
   lock_init (&p->lock);

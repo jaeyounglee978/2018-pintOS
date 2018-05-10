@@ -22,6 +22,9 @@
 #include "threads/palloc.h"
 #include "threads/pte.h"
 #include "threads/thread.h"
+#include "vm/pagetable.h"
+#include "vm/frame.h"
+#include "vm/swap.h"
 #ifdef USERPROG
 #include "userprog/process.h"
 #include "userprog/exception.h"
@@ -125,6 +128,9 @@ main (void)
   ide_init ();
   locate_block_devices ();
   filesys_init (format_filesys);
+  pagetable_init();
+  frametable_init();
+  swap_disk_init();
 #endif
 
   printf ("Boot complete.\n");

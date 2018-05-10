@@ -107,6 +107,8 @@ struct thread
     int sys_lock_hold;
     int file_lock_hold;
 
+    bool is_running;
+
 #ifdef USERPROG
     /* Owned by userprog/process.c. */
     uint32_t *pagedir;                  /* Page directory. */

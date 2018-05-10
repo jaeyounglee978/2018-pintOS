@@ -7,6 +7,11 @@
 #include "threads/interrupt.h"
 #include "threads/thread.h"
 #include "threads/vaddr.h"
+#include "threads/palloc.h"
+#include "threads/synch.h"
+#include "vm/pagetable.h"
+#include "vm/swap.h"
+#include "vm/frame.h"
 
 /* Number of page faults processed. */
 static long long page_fault_cnt;
@@ -14,6 +19,8 @@ static long long page_fault_cnt;
 static void kill (struct intr_frame *);
 bool _is_valid_addr(const void *addr);
 static void page_fault (struct intr_frame *);
+
+struct lock exception_lock;
 
 /* Registers handlers for interrupts that can be caused by user
    programs.
@@ -33,6 +40,7 @@ static void page_fault (struct intr_frame *);
 void
 exception_init (void) 
 {
+  lock_init(&exception_lock);
   /* These exceptions can be raised explicitly by a user program,
      e.g. via the INT, INT3, INTO, and BOUND instructions.  Thus,
      we set DPL==3, meaning that user programs are allowed to
@@ -112,22 +120,6 @@ kill (struct intr_frame *f)
     }
 }
 
-bool
-_is_valid_addr(const void *addr)
-{
-  if (is_user_vaddr(addr))
-  {
-    struct thread* t = thread_current();
-    void *p = pagedir_get_page(t->pagedir, addr);
-    if (p != NULL)
-      return true;
-    else
-      return false;
-  }
-  else
-    return false;
-}
-
 /* Page fault handler.  This is a skeleton that must be filled in
    to implement virtual memory.  Some solutions to project 2 may
    also require modifying this code.
@@ -163,6 +155,8 @@ page_fault (struct intr_frame *f)
   /* Count page faults. */
   page_fault_cnt++;
 
+  printf("(%s, %d)    PAGE FAULT fault_addr = %p\n", thread_current()->name, thread_current()->tid, fault_addr);
+
   if (check_filesys_lock())
   {
     if (is_kernel_vaddr(fault_addr))
@@ -174,9 +168,65 @@ page_fault (struct intr_frame *f)
     else
     {
       //printf("page fault kernel : %p\n", fault_addr);
-      syscall_exit(-1);
+      //syscall_exit(-1);
     }
   }
+
+  printf("no filesys lock\n");
+
+  if (is_user_vaddr(fault_addr))
+  {
+    lock_acquire(&exception_lock);
+    struct thread* t = thread_current();
+    void *p = pagedir_get_page(t->pagedir, fault_addr);
+    printf("(%s, %d)  PAGE FAULT: p = %p\n", t->name, t->tid, p);
+    if (p != NULL)
+    {
+      lock_release(&exception_lock);
+      return;
+    }
+    else
+    {
+      void *fault_addr_ = (void *)((uint32_t)fault_addr & 0xfffff000);
+      printf("(%s, %d)page fault: input addr = %p, (screened)%p, pd = %p\n", t->name, t->tid, fault_addr, fault_addr_, t->pagedir);
+      struct page_entry *p_e = page_entry_lookup(fault_addr_, t->tid);
+      printf("(%s, %d)lookup page entry %p, is_swapped = %d, upage %p, kpage %p\n", t->name, t->tid, p_e, is_swapped(p_e), page_entry_upage(p_e), page_entry_kpage(p_e));
+
+      if (p_e == NULL)
+      {
+        lock_release(&exception_lock);
+        syscall_exit(-1);
+      }
+
+      if(is_swapped(p_e))
+      {
+        void *pages = palloc_get_page(PAL_USER);
+        swap_disk_to_frame(pages, page_entry_kpage(p_e), t->tid);
+        flap_swapped_flag(p_e);
+        pagedir_set_page (t->pagedir, fault_addr_, pages, page_entry_writable(p_e));
+        void *dst = pagedir_get_page(t->pagedir, fault_addr);
+        printf("(%s, %d)set well? %p\n", t->name, t->tid, dst);
+        printf("(%s, %d)page fault : re-swap end, swap flag %d\n\n", t->name, t->tid, is_swapped(p_e));
+
+        page_entry_update_kpage(p_e, pages);
+        
+        lock_release(&exception_lock);
+        return;
+      }
+      else
+      {
+        lock_release(&exception_lock);
+        return page_entry_kpage(p_e);
+      }
+      lock_release(&exception_lock);
+    }
+  }
+  else
+  {
+    syscall_exit(-1);
+  }
+
+  /*
   if (!_is_valid_addr(fault_addr))
   {
     //printf("page fault : %p\n", fault_addr);
@@ -185,7 +235,7 @@ page_fault (struct intr_frame *f)
   else
   {
     return;
-  }
+  }*/
 
   /* Determine cause. */
   not_present = (f->error_code & PF_P) == 0;

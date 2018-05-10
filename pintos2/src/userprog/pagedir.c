@@ -5,6 +5,9 @@
 #include "threads/init.h"
 #include "threads/pte.h"
 #include "threads/palloc.h"
+#include "vm/pagetable.h"
+#include "vm/frame.h"
+#include "vm/swap.h"
 
 static uint32_t *active_pd (void);
 static void invalidate_pagedir (uint32_t *);
@@ -27,6 +30,7 @@ pagedir_create (void)
 void
 pagedir_destroy (uint32_t *pd) 
 {
+  //printf("(%s, %d)  PAGEDIR DESTROY : pd = %p\n", thread_current()->name, thread_current()->tid, pd);
   uint32_t *pde;
 
   if (pd == NULL)
@@ -45,6 +49,8 @@ pagedir_destroy (uint32_t *pd)
         palloc_free_page (pt);
       }
   palloc_free_page (pd);
+
+  //printf("(%s, %d)  PAGEDIR DESTROY : end\n", thread_current()->name, thread_current()->tid);
 }
 
 /* Returns the address of the page table entry for virtual
@@ -56,6 +62,7 @@ pagedir_destroy (uint32_t *pd)
 static uint32_t *
 lookup_page (uint32_t *pd, const void *vaddr, bool create)
 {
+  ////printf("lookup_page\n");
   uint32_t *pt, *pde;
 
   ASSERT (pd != NULL);
@@ -67,19 +74,20 @@ lookup_page (uint32_t *pd, const void *vaddr, bool create)
      If one is missing, create one if requested. */
   pde = pd + pd_no (vaddr);
   if (*pde == 0) 
-    {
-      if (create)
-        {
-          pt = palloc_get_page (PAL_ZERO);
-          if (pt == NULL) 
-            return NULL; 
-      
-          *pde = pde_create (pt);
-        }
-      else
-        return NULL;
-    }
+  {
+    if (create)
+      {
+        pt = palloc_get_page (PAL_ZERO);
+        if (pt == NULL) 
+          return NULL; 
+    
+        *pde = pde_create (pt);
+      }
+    else
+      return NULL;
+  }
 
+  ////printf("lookup_page return\n");
   /* Return the page table entry. */
   pt = pde_get_pt (*pde);
   return &pt[pt_no (vaddr)];
@@ -98,6 +106,7 @@ lookup_page (uint32_t *pd, const void *vaddr, bool create)
 bool
 pagedir_set_page (uint32_t *pd, void *upage, void *kpage, bool writable)
 {
+  //printf("(%s, %d)  PAGEDIR SET PAGE : pd = %p, upage = %p kpage = %p\n", thread_current()->name, thread_current()->tid, pd, upage, kpage);
   uint32_t *pte;
 
   ASSERT (pg_ofs (upage) == 0);
@@ -108,10 +117,17 @@ pagedir_set_page (uint32_t *pd, void *upage, void *kpage, bool writable)
 
   pte = lookup_page (pd, upage, true);
 
+  //printf("(%s, %d)pagedir set page new pte = %p\n", thread_current()->name, thread_current()->tid, pte);
   if (pte != NULL) 
     {
       ASSERT ((*pte & PTE_P) == 0);
       *pte = pte_create_user (kpage, writable);
+      void *pe = page_entry_insert(upage, kpage, writable, thread_current()->tid);
+
+      frame_entry_insert(upage, kpage, thread_current()->tid);
+
+      //printf("(%s, %d)pagedir set page page entry = %p\n", thread_current()->name, thread_current()->tid, pe);
+      //printf("\n");
       return true;
     }
   else
@@ -125,11 +141,13 @@ pagedir_set_page (uint32_t *pd, void *upage, void *kpage, bool writable)
 void *
 pagedir_get_page (uint32_t *pd, const void *uaddr) 
 {
+  ////printf("  PAGEDIR GET PAGE uaddr = %p\n", uaddr);
   uint32_t *pte;
 
   ASSERT (is_user_vaddr (uaddr));
   
   pte = lookup_page (pd, uaddr, false);
+  ////printf("  PAGEDIR GET PAGE : lookup_page = %p\n", pte);
   if (pte != NULL && (*pte & PTE_P) != 0)
     return pte_get_page (*pte) + pg_ofs (uaddr);
   else
